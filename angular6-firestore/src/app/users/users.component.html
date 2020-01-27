@@ -1,0 +1,21 @@
+<p>users works!</p>
+
+<table>
+    <thead>
+
+
+      <th>ID</th>
+      <th>Name</th>
+    </thead>
+
+
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.name.id}}</td>
+        <td>{{user.name.name}}</td>
+        <td>
+            <button (click)="delete(user.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
